@@ -1,0 +1,37 @@
+body
+{
+   background-color: darkred;
+   font-family: Papyrus;
+   text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size:5em;
+}
+
+h2{
+    font-size:2em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+canvas {
+    display: block;
+    background-color: #a7ffeb;
+    border: 2px solid #004d40;
+    margin: 20px auto;
+}
+
+#InfoGame {
+    padding: 1em;
+    background-color: rgba(100,0,0,255);
+    width: 45em;
+}

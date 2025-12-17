@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>public</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <!--I also added a guide for the level editor, in case is a first time using the tool or for reference of what it should do in the level-->
+        <h1>Green eyes and cannon balls</h1>
+        <p>Cool game that's totally not ripped off :).</p>
+        <h2>Tag references for the levels.</h2>
+        <h3>cannon:</h3>
+        <h4>Makes reference from where the player will start launchg the Animals. (Recomended to place only one).</h4>
+        <h3>enemy:</h3>
+        <h4>Makes reference from where the enemies will be located (to be destroyed by the player).</h4>
+        <h3>block(H and V):</h3>
+        <h4>Block to construct the enemy structure, to protect it. This elements ARE DESTRUCTABLE by the player.</h4>
+        <h3>TNT:</h3>
+        <h4>Small block that, if collides, will destroy all DESTRUCTABLE elements in radius, and itself.</h4>
+        <h3>Terrain:</h3>
+        <h4>This are also bulding blocks, however, this ones ARE NOT DESTRUCTABLE by the player. Use for floor and similar structures.</h4>
+
+    </header>
+
+    <main>
+        <section id="left-panel">
+            <div class="panel">
+                <h2>Level Info</h2>
+                <label>
+                    Level ID:
+                    <input type="text" id="level-id" placeholder="999" />
+                </label>
+
+                <div class="button-row">
+                    <button id="save-level">Save</button>
+                    <button id="load-level">Load</button>
+                    <button id="delete-level" class="danger">Delete</button>
+                    <!--The button is now a selector with all the options of the elements (to easily add more in the future)-->
+                    <select id="select-block">
+                        <option value="cannon">cannon</option>
+                        <option value="blockH">blockH</option>
+                        <option value="blockV">blockV</option>
+                        <option value="enemy">enemy</option>
+                        <option value="TNT">TNT</option>
+                        <option value="Terrain">Terrain</option>
+                    </select>
+                    <button id="add-block">Add</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="editor-panel">
+            <h2>Level Canvas</h2>
+            <div id="editor"></div>
+            <p class="hint">Right-click to delete a block. Left-click to duplicate it. Wheel of the mouse to change the Size. Drag blocks with your mouse.</p>
+        </section>
+
+        <!--YES, I know the footer dosen't goes here, but it was to adjust it to the actual web poage design-->
+        <footer>
+            <h5 id="foot">&copy; VFS, Spencer Paynter-Repay, Rafael Arias Gonzales, Julian D Silva - 2025</h5>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

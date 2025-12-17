@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>public</title>
+    <link rel='Stylesheet' href='style.css'>
+</head>
+<body>
+
+    <header>
+        <h1>Green Eyes Invasion</h1>
+    </header>
+
+    <main>
+        <section id="InfoGame">
+            <h2>
+                About this game
+            </h2>
+            <div>
+                <p>Here, your objective is to use the cannon balls inside the black square to hit all the elements on screen. You accumulate score on each level you complete. 
+                The green Eyes are the ones you should eliminate to complete the level. There are also red TNT sqare that it will give you a bonus if you destroy them.</p>
+            </div>
+            <h2>
+                Instructions
+            </h2>
+            <div>
+                <p>Use the mouse to drag the cannon ball as if it was a slingshot. The cannon will shoot the bullet in the oposite direction (You can also bounce it to the floor for a better angle). 
+                If you want to play more levels, you can load your own ones and access to them with the "Skip Button", just take into account that skipping a level will not add you score.</p>
+            </div>
+            <div>
+                <input type="text" id="level-id" placeholder="Level ID" />
+                <button id="load-level">Add the level</button>
+            </div>
+            <button id="advance">Skip this level</button>
+        </section>
+        <canvas id="gameCanvas"></canvas>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 VFS, Julian D Silva. Javascript Web App</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/planck-js/1.4.2/planck.min.js"></script>
+    <script src='app.js'>
+    </script>
+</body>
+</html>

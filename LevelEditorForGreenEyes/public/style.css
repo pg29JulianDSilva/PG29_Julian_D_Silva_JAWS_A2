@@ -1,0 +1,106 @@
+/*this is for the bdoby base*/
+body {
+    font-family: Papyrus;
+    color:aliceblue;
+    display: flex;
+    height: 100vh;
+    background-color:#830000;
+}
+
+p
+h1{
+    margin:1vw;
+}
+
+h2
+h3 {
+    color: #989898;
+}
+
+
+h4 {
+    color: #dcdcdc;
+    margin:0.5vw;
+}
+
+.main-content{
+    flex: 0 1 75%;
+    text-align: center;
+}
+.sidebar{
+    flex: 0 1 25%;
+    background-color: #808080;
+   text-align: center;
+}
+
+/*This is for the main editors pannel*/
+
+#editor-panel {
+    flex: 1;
+}
+
+    #editor-panel h2 {
+        margin-top: 0;
+    }
+
+#editor {
+    width: 800px;
+    height: 600px;
+    border-radius: 8px;
+    border: 2px dashed #555;
+    position: relative;
+    background-color: #808080;
+    overflow: hidden;
+}
+
+#foot{
+    padding:1vw;
+}
+
+/*Elements to edit*/
+
+.blockH {
+    width: 100px;
+    height: 25px;
+    background-color: saddlebrown;
+    position: absolute;
+}
+
+.blockV {
+    width: 25px;
+    height: 100px;
+    background-color: saddlebrown;
+    position: absolute;
+}
+
+.cannon {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    transform: matrix(1, 0, -0.36397, 1, 0, 0);
+}
+
+.enemy {
+    width: 50px;
+    height: 50px;
+    background-image: radial-gradient(ellipse farthest-corner at 25% 50%, black, white 10%, green 15%);
+    background-color: green;
+    position: absolute;
+    border-radius: 100px;
+}
+
+.TNT {
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(to right, red, red,white,red, red, white, red, red);
+    position: absolute;
+    color: aliceblue;
+}
+
+.Terrain {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    position: absolute;
+}
